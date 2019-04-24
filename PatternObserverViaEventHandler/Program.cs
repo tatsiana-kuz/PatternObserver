@@ -29,7 +29,7 @@ namespace PatternObserverViaEventHandler
 
             Type type = thermostat.GetType();
 
-            foreach (var t in type.GetMethods())
+            foreach (var t in type.GetMethods(BindingFlags.Instance | BindingFlags.Public|BindingFlags.NonPublic))
             {
                 Console.WriteLine(t.Name);
             }
