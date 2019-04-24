@@ -11,6 +11,7 @@ namespace PatternObserverViaEventHandler
         static void Main(string[] args)
         {
             //coздать объект класса Thermostat
+            Thermostat thermostat = new Thermostat();
 
             //coздать объект класса Heater установив начальную температуру равную 30 градусов
 
@@ -25,6 +26,13 @@ namespace PatternObserverViaEventHandler
             //объект класса Cooler - отписаться от события изменения температуры класса Thermostat
 
             //эмуляция изменения температуры объекта класса Thermostat на 45 градусов
+
+            Type type = thermostat.GetType();
+
+            foreach (var t in type.GetMethods())
+            {
+                Console.WriteLine(t.Name);
+            }
         }
     }
 

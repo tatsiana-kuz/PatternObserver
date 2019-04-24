@@ -1,5 +1,4 @@
 ﻿using System;
-
 static class Program
 {
     static void Main(string[] args)
@@ -22,7 +21,7 @@ static class Program
 
         cooler.Update(thermostat.CurrentTemperature);
 
-        Console.ReadKey();
+
     }
 }
 
